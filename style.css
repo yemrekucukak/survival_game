@@ -1,0 +1,79 @@
+body{margin: 0; background-color: black;}
+
+#container{display: flexbox; flex-direction: row; position: absolute; z-index: 6; padding: 3%; visibility: hidden;}
+#score_text{font-weight: bold; font-size: x-large; color: white; user-select: none; }
+#score_number{font-weight: bold; font-size: x-large; color: white; user-select: none; }
+
+#points_text{visibility: hidden;}
+
+#user_interface{
+    color: rgba(180, 0, 60, 0.9);
+    font-size: x-large;
+    width: 48%;
+    height: 42%;
+    background-color: rgba(30,0,0,1);
+    position: absolute; z-index: 6;
+    top: 29%;
+    text-align: center;
+    left: 26%;
+    user-select: none;
+}
+
+#start_button{
+    font-size: xx-large;
+    font-weight: bolder;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color:  rgba(180, 0, 60, 0.9);
+    border-radius: 12px;
+
+}
+#start_button:hover{
+    background-color: rgba(180, 0, 60, 0.3);
+}
+
+#extra_items{
+    visibility: hidden;
+    z-index: 6;
+    background-color:  rgba(180, 0, 60, 0.3);
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    gap: 72px;
+    font-size: x-large;
+    align-self: center;
+    bottom: 2.4%;
+    left: 30%;
+    padding: 1.2%;
+}
+
+.item{
+    background-color: rgba(180, 0, 60, 0.72);
+    padding-left: 24px;
+    padding-right: 36px;
+    padding: 18px;
+    user-select: none;
+    font-size: x-large;
+    color: black;
+}
+
+button:hover{
+    background-color: rgba(180, 0, 60, 0.3);
+}
+
+#allinfo{ position: absolute; z-index:7; visibility: hidden; display: flex; flex-direction: column;   margin-left: 30%;
+    margin-right: 24%; }
+
+.info{
+    color: white;
+    text-align: center;
+    background-color: rgba(180, 0, 60, 0.3);
+    margin-left: 24%;
+    margin-right: 24%;
+}
+
+#main_info{font-size: xx-large;}
+
+#extra_items:hover ~ #allinfo{visibility: visible;}

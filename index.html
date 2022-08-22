@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>'Till U're Dead</title>
+<meta charset = "utf-8">
+<link rel="stylesheet" href="style.css" />
+</head> 
+
+<div id="container"><span id="score_text">Score: </span> <span id="score_number">0</span></div>
+
+
+<div id="user_interface">
+    <h1 id="final_score_tag">'Till U're Dead</h1>
+    <h2 id="points_text">0</h2>
+    <div id="button"><button type='button' id="start_button">START</button></div>
+</div>
+
+<div id="extra_items">  <div id="knife_container"><button id="knife" class="item">Knife</button></div>  <div id="better_container"><button id="better_gun" class="item">Gun Upgrade</button></div> <div id="faster_container"><button id="faster" class="item">Bomb</button></div> </div>
+
+<div id="allinfo">
+<div id="main_info" class="info">INFO</div>
+<div id="knife_info" class="info">Knife saves you from a contact with a zombie and can be used only once. Cost:100$</div>
+<div id="gun_info" class="info">Gun upgrade increases your fire power. Cost:240$</div>
+<div id="faster_info" class="info">Bomb eradicates all the zombies on the screen. Cost:300$</div>
+</div>
+
+<canvas></canvas>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="main.js"></script>
+</body>
+
+</html>
